@@ -15,9 +15,20 @@
       </div>
       <div class="white-card">
         <h1>Hello, I'm Lena</h1>
-        <p>I am an Advertising Product Specialist at Google. I focus on helping my clients grow their online audience, gain new clients and improve their media effectiveness. I was feeling bad working at a tech company with no coding skills at all -- so here I am !</p>
-        <a href=""  class="text-link">This is a link</a>
+        <p>I am an Advertising Product Specialist at Google. I focus on helping my clients grow their online audience, gain new clients and improve their media effectiveness. I was feeling bad working at a tech company with no coding skills at all -- so here I am ! </p>
+        <a href="#" id="button-fun-fact">Discover my Fun Fact !</a>
       </div>
+
+      <div id="fun-fact">
+        <div id="header">
+          <img src="https://cdn2.scratch.mit.edu/get_image/gallery/320074_170x100.png" id="rounded-pic" class="white-border-image">
+        </div>
+        <div class="white-card">
+          <p> Here is my super fact 😂 </p>
+        </div>
+      </div>
+
+
       <div class="white-card">
         <h2>Let's keep in touch</h2>
           <ul class="list-inline">
@@ -43,6 +54,12 @@
 </html>
 
 
+<script>
+  
+  document.getElementById("fun-fact").style.display = "none";
 
+  document.getElementById("button-fun-fact").onclick = function(){
+    document.getElementById("fun-fact").style.display = "block";
+  }
 
-<!-- end of file -->
+</script>
